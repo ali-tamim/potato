@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Sub/Coin.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">components/Sub</a> Coin.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/60</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;div class="coin"&gt;
+        &lt;h4&gt;{{ name }} &lt;span v-lang.Priceby&gt;&lt;/span&gt; {{ currency }}: &lt;/h4&gt;
+        &lt;div v-show="!info.loading" class="md-layout info"&gt;
+            &lt;div class="md-layout-item md-size-30 md-xsmall-size-100"&gt;
+                &lt;h1 class="price"&gt;{{ price.PRICE }}&lt;/h1&gt;
+                &lt;small class="md-xsmall-hide"&gt;
+                    &lt;table class="table-info one-info "&gt;
+                        &lt;col width="80"&gt;
+                        &lt;tr&gt;&lt;td v-lang.hChange24&gt;&lt;/td&gt;&lt;td&gt;{{ price.CHANGE24HOUR }} &lt;small&gt;({{ price.CHANGE24HOURPCT }})&lt;/small&gt;&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.LastMarket&gt;&lt;/td&gt;&lt;td&gt;{{ price.LASTMARKET }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.TradeID&gt;:&lt;/td&gt;&lt;td&gt;{{ price.LASTTRADEID }}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-35 other-info md-xsmall-hide"&gt;
+                &lt;small class="md-xsmall-hide"&gt;
+                    &lt;table class="table-info"&gt;
+                        &lt;col width="125"&gt;
+                        &lt;tr&gt;&lt;td v-lang.OpenHour&gt;&lt;/td&gt;&lt;td&gt;{{ price.OPENHOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.HighHour&gt;&lt;/td&gt;&lt;td&gt;{{ price.HIGHHOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.LowHour&gt;&lt;/td&gt;&lt;td&gt;{{ price.LOWHOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.LastTradeVolume&gt;&lt;/td&gt;&lt;td&gt;{{ price.LASTVOLUME }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.LastTradeVolumeTo&gt;&lt;/td&gt;&lt;td&gt;{{ price.LASTVOLUMETO }}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-35 other-info md-xsmall-hide"&gt;
+                &lt;small class="md-xsmall-hide"&gt;
+                    &lt;table class="table-info"&gt;
+                        &lt;col width="100"&gt;
+                        &lt;tr&gt;&lt;td v-lang.OpenDay&gt;&lt;/td&gt;&lt;td&gt;{{ price.OPEN24HOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.HighDay&gt;&lt;/td&gt;&lt;td&gt;{{ price.HIGH24HOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.LowDay&gt;&lt;/td&gt;&lt;td&gt;{{ price.LOW24HOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.hVolume24&gt;&lt;/td&gt;&lt;td&gt;{{ price.VOLUME24HOUR }}&lt;/td&gt;&lt;/tr&gt;
+                        &lt;tr&gt;&lt;td v-lang.hVolumeTo24&gt;&lt;/td&gt;&lt;td&gt;{{ price.VOLUME24HOURTO }}&lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/small&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-100"&gt;
+                &lt;app-chart :id="id" :from="coinname" :to="currency" :chartData="coinData()" :format="format" :his="hisBy"&gt;&lt;/app-chart&gt;
+                &lt;md-content&gt;
+                    &lt;div class="his"&gt;
+                        &lt;md-button v-lang.h1 @click="hisByChanger('hour')" :class="['md-icon-button md-dense', hisBy == 'hour' ? 'md-primary' : '']"&gt;&lt;/md-button&gt;
+                        &lt;md-button v-lang.d1 @click="hisByChanger('day')" :class="['md-icon-button md-dense', hisBy == 'day' ? 'md-primary' : '']"&gt;&lt;/md-button&gt;
+                        &lt;md-button v-lang.w1 @click="hisByChanger('week')" :class="['md-icon-button md-dense', hisBy == 'week' ? 'md-primary' : '']"&gt;&lt;/md-button&gt;
+                        &lt;md-button v-lang.m1 @click="hisByChanger('month')" :class="['md-icon-button md-dense', hisBy == 'month' ? 'md-primary' : '']"&gt;&lt;/md-button&gt;
+                        &lt;md-button v-lang.y1 @click="hisByChanger('year')" :class="['md-icon-button md-dense', hisBy == 'year' ? 'md-primary' : '']"&gt;&lt;/md-button&gt;
+                    &lt;/div&gt;
+                    &lt;md-divider&gt;&lt;/md-divider&gt;
+                &lt;/md-content&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div v-show="info.loading"&gt;
+            &lt;md-progress-spinner class="md-primary loading" :md-stroke="3" md-mode="indeterminate"&gt;&lt;/md-progress-spinner&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;style scoped&gt;
+    .coin {
+        padding: 10px 0px;
+        border-top: 1px solid #e040fb;
+        margin-bottom: 30px;
+    }
+    .info{
+    }
+    .one-info{
+        padding: 10px;
+    }
+    .price{
+        text-align: center;
+    }
+    .other-info{
+        border-left: 1px solid #e040fb;
+        padding: 4px;
+    }
+    .table-info td{
+        padding: 4px 0px;
+    }
+    .his{
+        padding: 20px 0px;
+        text-align: right;
+        margin-right: 30px;
+    }
+&lt;/style&gt;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import Chart from './Chart.vue'</span>
+export default {
+    components: {
+        'app-chart': Chart
+    },
+    name: 'coin',
+    props: ['info', 'name', 'currency', 'price', 'id', 'coinname'],
+<span class="fstat-no" title="function not covered" >    data: function () {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            hisBy: 'year',
+            format: 'YYYY MMM D',
+            btchisData: [],
+            ethhisData: [],
+            xrphisData: []
+        }
+    },
+<span class="fstat-no" title="function not covered" >    mounted () {</span>
+<span class="cstat-no" title="statement not covered" >        this.getHisData(this.coinname, this.currency)</span>
+    },
+    watch: {
+<span class="fstat-no" title="function not covered" >        currency: function (newVal, oldVal) {</span>
+<span class="cstat-no" title="statement not covered" >            this.getHisData(this.coinname, this.currency)</span>
+        },
+<span class="fstat-no" title="function not covered" >        hisBy: function () {</span>
+<span class="cstat-no" title="statement not covered" >            this.getHisData(this.coinname, this.currency)</span>
+        }
+    },
+    methods: {
+<span class="fstat-no" title="function not covered" >        coinData: function () {</span>
+<span class="cstat-no" title="statement not covered" >            if (this.coinname === 'BTC') {</span>
+<span class="cstat-no" title="statement not covered" >                return this.btchisData</span>
+<span class="cstat-no" title="statement not covered" >            } else if (this.coinname === 'ETH') {</span>
+<span class="cstat-no" title="statement not covered" >                return this.ethhisData</span>
+<span class="cstat-no" title="statement not covered" >            } else if (this.coinname === 'XRP') {</span>
+<span class="cstat-no" title="statement not covered" >                return this.xrphisData</span>
+            }
+        },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        getHisData: function (par, currency) {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (this.$ls.get('his-data-' + this.hisBy + '-' + par + '-' + currency)) {</span>
+<span class="cstat-no" title="statement not covered" >                console.log('now : his-data-' + this.hisBy + '-' + par + '-' + currency)</span>
+<span class="cstat-no" title="statement not covered" >                var hisData = JSON.parse(this.$ls.get('his-data-' + this.hisBy + '-' + par + '-' + currency))</span>
+<span class="cstat-no" title="statement not covered" >                if (par === 'BTC') {</span>
+<span class="cstat-no" title="statement not covered" >                    this.btchisData = hisData</span>
+<span class="cstat-no" title="statement not covered" >                } else if (par === 'ETH') {</span>
+<span class="cstat-no" title="statement not covered" >                    this.ethhisData = hisData</span>
+<span class="cstat-no" title="statement not covered" >                } else if (par === 'XRP') {</span>
+<span class="cstat-no" title="statement not covered" >                    this.xrphisData = hisData</span>
+                }
+            } else {
+<span class="cstat-no" title="statement not covered" >                var url = ''</span>
+<span class="cstat-no" title="statement not covered" >                if (this.hisBy === 'year') {</span>
+<span class="cstat-no" title="statement not covered" >                    url = 'https://min-api.cryptocompare.com/data/histoday?fsym=' + par + '&amp;tsym=' + currency + '&amp;limit=365'</span>
+<span class="cstat-no" title="statement not covered" >                } else if (this.hisBy === 'month') {</span>
+<span class="cstat-no" title="statement not covered" >                    url = 'https://min-api.cryptocompare.com/data/histoday?fsym=' + par + '&amp;tsym=' + currency + '&amp;limit=30'</span>
+<span class="cstat-no" title="statement not covered" >                } else if (this.hisBy === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >                    url = 'https://min-api.cryptocompare.com/data/histoday?fsym=' + par + '&amp;tsym=' + currency + '&amp;limit=7'</span>
+<span class="cstat-no" title="statement not covered" >                } else if (this.hisBy === 'day') {</span>
+<span class="cstat-no" title="statement not covered" >                    url = 'https://min-api.cryptocompare.com/data/histohour?fsym=' + par + '&amp;tsym=' + currency + '&amp;limit=24'</span>
+<span class="cstat-no" title="statement not covered" >                } else if (this.hisBy === 'hour') {</span>
+<span class="cstat-no" title="statement not covered" >                    url = 'https://min-api.cryptocompare.com/data/histominute?fsym=' + par + '&amp;tsym=' + currency + '&amp;limit=60'</span>
+                }
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                this.$http.get(url).then(res =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >                    var expire = 1</span>
+<span class="cstat-no" title="statement not covered" >                    if (this.hisBy === 'year' || this.hisBy === 'month') {</span>
+<span class="cstat-no" title="statement not covered" >                        expire = 24 * 60 * 60 * 1000</span>
+<span class="cstat-no" title="statement not covered" >                    } else if (this.hisBy === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >                        expire = 2 * 60 * 60 * 1000</span>
+<span class="cstat-no" title="statement not covered" >                    } else if (this.hisBy === 'day') {</span>
+<span class="cstat-no" title="statement not covered" >                        expire = 30 * 60 * 1000</span>
+                    } else {
+<span class="cstat-no" title="statement not covered" >                        expire = 5 * 60 * 1000</span>
+                    }
+<span class="cstat-no" title="statement not covered" >                    this.$ls.set('his-data-' + this.hisBy + '-' + par + '-' + currency, JSON.stringify(res.body.Data), expire)</span>
+<span class="cstat-no" title="statement not covered" >                    if (par === 'BTC') {</span>
+<span class="cstat-no" title="statement not covered" >                        this.btchisData = res.body.Data</span>
+<span class="cstat-no" title="statement not covered" >                    } else if (par === 'ETH') {</span>
+<span class="cstat-no" title="statement not covered" >                        this.ethhisData = res.body.Data</span>
+<span class="cstat-no" title="statement not covered" >                    } else if (par === 'XRP') {</span>
+<span class="cstat-no" title="statement not covered" >                        this.xrphisData = res.body.Data</span>
+                    }
+<span class="fstat-no" title="function not covered" >                }, res =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                    console.log(res)</span>
+                })
+            }
+        },
+<span class="fstat-no" title="function not covered" >        hisByChanger: function (by) {</span>
+<span class="cstat-no" title="statement not covered" >            this.hisBy = by</span>
+<span class="cstat-no" title="statement not covered" >            if (by === 'year') {</span>
+<span class="cstat-no" title="statement not covered" >                this.format = 'YYYY MMM D'</span>
+<span class="cstat-no" title="statement not covered" >            } else if (by === 'month') {</span>
+<span class="cstat-no" title="statement not covered" >                this.format = 'MMM D'</span>
+<span class="cstat-no" title="statement not covered" >            } else if (by === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >                this.format = 'll'</span>
+<span class="cstat-no" title="statement not covered" >            } else if (by === 'day') {</span>
+<span class="cstat-no" title="statement not covered" >                this.format = 'Ha'</span>
+<span class="cstat-no" title="statement not covered" >            } else if (by === 'hour') {</span>
+<span class="cstat-no" title="statement not covered" >                this.format = 'h:mm a'</span>
+            }
+        }
+    }
+}
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 19 2018 19:02:43 GMT+0300 (+03)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

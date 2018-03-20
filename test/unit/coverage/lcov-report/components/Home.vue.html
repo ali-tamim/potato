@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Home.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">components</a> Home.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/44</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;div&gt;
+        &lt;app-navbar&gt;&lt;/app-navbar&gt;
+        &lt;div class="md-layout"&gt;
+            &lt;div class="md-layout-item md-size-5"&gt;&lt;/div&gt;
+            &lt;div class="md-layout-item md-size-90"&gt;
+                &lt;app-welcome :currency="currency" @changeCurrency="changeCurrency"&gt;&lt;/app-welcome&gt;
+                &lt;offline @detected-condition="handleConnectivityChange"&gt;&lt;/offline&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-5"&gt;&lt;/div&gt;
+            &lt;div class="md-layout-item md-size-5"&gt;&lt;/div&gt;
+            &lt;div class="md-layout-item md-size-60 md-xlarge-size-60 md-large-size-60 md-medium-size-90"&gt;
+                &lt;br&gt;
+                &lt;app-coin :info="info" id="btchis" coinname="BTC" name="Bitcoin - BTC" :currency="currency" :price="inCurrency(price).BTC"&gt;&lt;/app-coin&gt;
+                &lt;app-coin :info="info" id="ethhis" coinname="ETH" name="Ethereum - ETH" :currency="currency" :price="inCurrency(price).ETH"&gt;&lt;/app-coin&gt;
+                &lt;app-coin :info="info" id="xrphis" coinname="XRP" name="Ripple - XRP" :currency="currency" :price="inCurrency(price).XRP"&gt;&lt;/app-coin&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-30 md-xlarge-size-30 md-large-size-30 md-medium-size-100"&gt;
+                &lt;app-top coinname="BTC" :currency="currency" style="margin-top: 20px"&gt;&lt;/app-top&gt;
+                &lt;app-top coinname="ETH" :currency="currency"&gt;&lt;/app-top&gt;
+                &lt;app-top coinname="XRP" :currency="currency"&gt;&lt;/app-top&gt;
+                &lt;app-news&gt;&lt;/app-news&gt;
+            &lt;/div&gt;
+            &lt;div class="md-layout-item md-size-5"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;md-snackbar md-position="center" :md-duration="Infinity" :md-active.sync="showSnackbar" md-persistent&gt;
+            &lt;span&gt;Connection is lost, u are offline!&lt;/span&gt;
+        &lt;/md-snackbar&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;style scoped&gt;
+&lt;/style&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import offline from 'v-offline'</span>
+<span class="cstat-no" title="statement not covered" >import Navbar from './Sub/Navbar.vue'</span>
+<span class="cstat-no" title="statement not covered" >import Welcome from './Sub/Welcome.vue'</span>
+<span class="cstat-no" title="statement not covered" >import Coin from './Sub/Coin.vue'</span>
+<span class="cstat-no" title="statement not covered" >import News from './Sub/News.vue'</span>
+<span class="cstat-no" title="statement not covered" >import Top from './Sub/TopExchanges.vue'</span>
+export default {
+    name: 'home',
+    components: {
+        'app-navbar': Navbar,
+        'app-welcome': Welcome,
+        'app-coin': Coin,
+        'app-news': News,
+        'app-top': Top,
+        offline
+    },
+<span class="fstat-no" title="function not covered" >    data: function () {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            currency: this.$ls.get('currency', 'USD'),
+            price: {
+                'USD': {
+                    'BTC': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'ETH': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'XRP': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''}
+                },
+                'EUR': {
+                    'BTC': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'ETH': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'XRP': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''}
+                },
+                'GBP': {
+                    'BTC': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'ETH': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'XRP': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''}
+                },
+                'JPY': {
+                    'BTC': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'ETH': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'XRP': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''}
+                },
+                'CNY': {
+                    'BTC': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'ETH': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''},
+                    'XRP': {FROMSYM: '', FROMSYMBOL: '', PRICE: '', CHANGE24HOUR: '', CHANGE24HOURPCT: '', LASTMARKET: '', LASTTRADEID: '', OPENHOUR: '', HIGHHOUR: '', LOWHOUR: '', OPEN24HOUR: '', OPEN24HOURNOSYM: '', HIGH24HOUR: '', LOW24HOUR: '', LASTVOLUME: '', LASTVOLUMETO: '', VOLUME24HOUR: '', VOLUME24HOURTO: ''}
+                }
+            },
+            info: {loading: true},
+            showSnackbar: false,
+            Infinity: true
+        }
+    },
+    watch: {
+<span class="fstat-no" title="function not covered" >        currency: function () {</span>
+<span class="cstat-no" title="statement not covered" >            this.$ls.set('currency', this.currency)</span>
+        }
+    },
+<span class="fstat-no" title="function not covered" >    mounted () {</span>
+<span class="cstat-no" title="statement not covered" >        this.socketSub()</span>
+<span class="cstat-no" title="statement not covered" >        this.language = this.$route.params.lang</span>
+    },
+    methods: {
+<span class="fstat-no" title="function not covered" >        changeCurrency: function (data) {</span>
+<span class="cstat-no" title="statement not covered" >            this.currency = data</span>
+        },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        socketSub: function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            var subAdd = [</span>
+                '5~CCCAGG~BTC~USD', '5~CCCAGG~BTC~EUR', '5~CCCAGG~BTC~GBP', '5~CCCAGG~BTC~JPY', '5~CCCAGG~BTC~CNY',
+                '5~CCCAGG~ETH~USD', '5~CCCAGG~ETH~EUR', '5~CCCAGG~ETH~GBP', '5~CCCAGG~ETH~JPY', '5~CCCAGG~ETH~CNY',
+                '5~CCCAGG~XRP~USD', '5~CCCAGG~XRP~EUR', '5~CCCAGG~XRP~GBP', '5~CCCAGG~XRP~JPY', '5~CCCAGG~XRP~CNY'
+            ]
+<span class="cstat-no" title="statement not covered" >            this.$socket.emit('SubAdd', {subs: subAdd})</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            this.$options.sockets.m = (message) =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >                var messageType = message.substring(0, message.indexOf('~'))</span>
+<span class="cstat-no" title="statement not covered" >                var res = {}</span>
+                // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                if (messageType == CCC.STATIC.TYPE.CURRENTAGG) {</span>
+                    // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                    res = CCC.CURRENT.unpack(message)</span>
+<span class="cstat-no" title="statement not covered" >                    this.dataUnpack(res)</span>
+                }
+            }
+        },
+<span class="fstat-no" title="function not covered" >        dataUnpack: function (data) {</span>
+<span class="cstat-no" title="statement not covered" >            var from = data['FROMSYMBOL']</span>
+<span class="cstat-no" title="statement not covered" >            var to = data['TOSYMBOL']</span>
+            // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >            var fsym = CCC.STATIC.CURRENCY.getSymbol(from)</span>
+            // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >            var tsym = CCC.STATIC.CURRENCY.getSymbol(to)</span>
+            // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >            this.price[to][from].FROMSYM = CCC.STATIC.CURRENCY.getSymbol(from)</span>
+<span class="cstat-no" title="statement not covered" >            for (var key in data) {</span>
+<span class="cstat-no" title="statement not covered" >                if (key === 'PRICE' || key === 'LASTVOLUMETO' || key === 'VOLUME24HOURTO' || key === 'OPEN24HOUR' || key === 'OPENHOUR' || key === 'HIGH24HOUR' || key === 'HIGHHOUR' || key === 'LOWHOUR' || key === 'LOW24HOUR') {</span>
+                    // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                    this.price[to][from][key] = CCC.convertValueToDisplay(tsym, data[key])</span>
+<span class="cstat-no" title="statement not covered" >                } else if (key === 'LASTVOLUME' || key === 'VOLUME24HOUR') {</span>
+                    // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                    this.price[to][from][key] = CCC.convertValueToDisplay(fsym, data[key])</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                    this.price[to][from][key] = data[key]</span>
+                }
+            }
+            // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >            data.hasOwnProperty('OPEN24HOUR') ? this.price[to][from].OPEN24HOURNOSYM = data['OPEN24HOUR'] : ''</span>
+<span class="cstat-no" title="statement not covered" >            if (data.hasOwnProperty('PRICE')) {</span>
+                // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                this.price[to][from].CHANGE24HOUR =  CCC.convertValueToDisplay(tsym, (data['PRICE'] - this.price[to][from].OPEN24HOURNOSYM))</span>
+                // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" >                this.price[to][from].CHANGE24HOURPCT =  ((data['PRICE'] - this.price[to][from].OPEN24HOURNOSYM) / this.price[to][from].OPEN24HOURNOSYM * 100).toFixed(2) + '%';</span>
+            }
+<span class="cstat-no" title="statement not covered" >            this.info.loading = false</span>
+        },
+<span class="fstat-no" title="function not covered" >        inCurrency: function (price) {</span>
+            // eslint-disable-next-line
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            if (this.currency === 'EUR') {return price.EUR}// eslint-disable-next-line</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            else if (this.currency === 'GBP') { return price.GBP }// eslint-disable-next-line</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >            else if (this.currency === 'JPY') { return price.JPY }// eslint-disable-next-line</span></span>
+<span class="cstat-no" title="statement not covered" >            else if (this.currency === 'CNY') { return price.CNY }</span>
+<span class="cstat-no" title="statement not covered" >            return price.USD</span>
+        },
+<span class="fstat-no" title="function not covered" >        handleConnectivityChange (status) {</span>
+<span class="cstat-no" title="statement not covered" >            if (!status) {</span>
+<span class="cstat-no" title="statement not covered" >                this.showSnackbar = true</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                this.showSnackbar = false</span>
+            }
+        }
+    }
+}
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 19 2018 19:02:43 GMT+0300 (+03)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
