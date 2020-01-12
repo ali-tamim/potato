@@ -5,7 +5,6 @@
 [Demo](http://ali-tamim.github.io/potato-wallet/#/en) 
 
 ## Build Setup
->  hello every one in enjaz
 ``` bash
 1- install dependencies
 npm install
